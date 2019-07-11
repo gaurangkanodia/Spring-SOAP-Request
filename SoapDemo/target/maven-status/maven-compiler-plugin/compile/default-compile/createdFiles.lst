@@ -1,0 +1,10 @@
+com\example\SoapDemo\MongoConfig.class
+com\soapdemo\demo\SalesTerritoryRequest.class
+com\example\SoapDemo\Accounts.class
+com\example\SoapDemo\SalesTerritorySoap.class
+com\example\SoapDemo\SoapDemoApplication.class
+com\example\SoapDemo\SalesTerritory.class
+com\soapdemo\demo\ObjectFactory.class
+com\soapdemo\demo\package-info.class
+com\example\SoapDemo\SoapWebServiceConfig.class
+com\soapdemo\demo\SalesTerritoryList.class

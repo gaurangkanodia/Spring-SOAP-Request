@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.soapdemo.com/demo"
+	xmlns:tns="http://www.soapdemo.com/demo" elementFormDefault="qualified">
+
+	<!-- <xs:element name="AccountsRequest">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="account_id" type="xs:long" />
+				<xs:element name="external_id" type="tns:list" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element> -->
+
+		<xs:complexType name="SalesTerritoryRequest">
+			<xs:sequence>
+				<xs:element name="id" type="xs:long" />
+				<xs:element name="name" type="xs:string" />
+				<xs:element name="level" type="xs:long" />
+				<xs:element name="parent_territory_id" type="xs:long" />
+				<xs:element name="current_owner_id" type="xs:long" />
+				<xs:element name="employee_responsible_id" type="xs:long" />
+				<xs:element name="territory_team_id" type="tns:list" />
+				<!-- <xs:element name="accounts" type="tns:accounts_list" /> -->
+			</xs:sequence>
+		</xs:complexType>
+
+	<xs:element name="SalesTerritoryList">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="stl" type="tns:SalesTerritoryRequest"	minOccurs="1" maxOccurs="unbounded" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	 <xs:simpleType name="list">
+		<xs:list itemType="xs:long" />
+	</xs:simpleType>
+
+	<!-- <xs:simpleType name="accounts_list"> <xs:list itemType="tns:Accounts" 
+		/> </xs:simpleType> -->
+</xs:schema>
